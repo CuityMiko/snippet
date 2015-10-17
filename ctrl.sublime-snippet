@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+var Ctrl = {
+  init: function () {
+    var me = this;
+    me.cacheElements();
+    me.addListeners();
+  },
+  cacheElements: function () {
+    var me = this;
+  },
+  addListeners: function () {
+    var me = this;
+  }
+}
+Ctrl.init();
+]]></content>
+  <tabTrigger>ctrl</tabTrigger>
+</snippet>
