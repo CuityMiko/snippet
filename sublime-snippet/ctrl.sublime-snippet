@@ -2,18 +2,22 @@
   <content><![CDATA[
 var $1Ctrl = {
   init: function () {
-    var me = this;
-    me.cacheElements();
-    me.addListeners();
+    this.loadState();
+    this.cacheElements();
+    this.addListeners();
+    this.startUp();
   },
-  cacheElements: function () {
-    var me = this;
+  cacheElements: function () {},
+  addListeners: function () {},
+  startUp: function () {},
+  destroy: function () {
+    this.removeListeners();
+    this.detachElements();
   },
-  addListeners: function () {
-    var me = this;
-  }
-}
-$2Ctrl.init();
+  removeListeners: function () {},
+  detachElements: function () {},
+  loadState: function () {}
+};
 ]]></content>
   <tabTrigger>ctrl</tabTrigger>
 </snippet>
