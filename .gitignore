@@ -6,6 +6,7 @@ app.yaml
 .*.swp
 .idea
 *.TODO
+*.log
 
 # mac
 .DS_Store
