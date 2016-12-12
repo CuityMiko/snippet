@@ -10,6 +10,7 @@ function hashWatcher(targetHash, wrapperHash, callback) {
     var originHash = (location.hash || '#').slice(1)
 
     var hash = originHash.replace(new RegExp(targetHash, 'g'), '')
+    hash = hash.replace(new RegExp(wrapperHash, 'g'), '')
     location.hash = hash + targetHash
     setTimeout(function () {
         location.hash = location.hash.replace(targetHash, wrapperHash)
