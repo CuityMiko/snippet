@@ -1,0 +1,7 @@
+/**
+ * 将像素转换为对应rem, 默认1rem = 75px 根据需要设置$rem-base = 设计稿尺寸 / 10 即可
+ * width: px2rem(30px);
+ **/
+@function px2rem($number) {
+  @return $number / $rem-base * 1rem;
+}

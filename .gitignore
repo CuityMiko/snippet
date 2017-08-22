@@ -135,3 +135,8 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+
+
+# oss log
+ossutil_output

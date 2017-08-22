@@ -1,0 +1,60 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+/** 用法如下
+input {
+  @include placeholder {
+      font-style:italic;
+      color: white;
+      font-weight:100;
+  }
+}
+*/
+
+
+// media query mixin
+// 使用这个mixin将pc样式和无线样式写在一起很方便
+// 至于性能每个view的css都是在view加载的时候按需加载的不会加载无关的css
+// 所以media query数量是有限的
+// 有测试表面一个media query和2000个media query性能上没有太大差异
+// http://stackoverflow.com/questions/11626174/is-there-an-advantage-in-grouping-css-media-queries-together
+// https://helloanselm.com/2014/web-performance-one-or-thousand-media-queries/
+
+@mixin mq($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+
+
+
+@mixin ellipsis() {
+white-space: nowrap;
+word-wrap: normal;
+overflow: hidden;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+text-align: left;
+}
