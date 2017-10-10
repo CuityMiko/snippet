@@ -1,21 +1,22 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "files.autoSave": "onFocusChange",
-    "files.associations": {
-        "*.js": "javascriptreact"
-    },
-    "emmet.syntaxProfiles": {
-        "javascript": "jsx",
-        "vue": "html",
-        "vue-html": "html"
-    },
-    "workbench.editor.showIcons": false,
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+      "*.js": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+      "javascript": "jsx",
+      "vue": "html",
+      "vue-html": "html"
+  },
+  "workbench.editor.showIcons": false,
+  "explorer.openEditors.visible": 0,
 
-    "window.zoomLevel": 0,
-    "editor.renderWhitespace": "all",
-    "editor.tabCompletion": true,
-    "editor.wordWrap": "on",
-    "javascript.validate.enable": false,
-    "workbench.colorTheme": "Visual Studio Light",
-    "workbench.iconTheme": null
+  "window.zoomLevel": 0,
+  "editor.renderWhitespace": "all",
+  "editor.tabCompletion": true,
+  "editor.wordWrap": "on",
+  "javascript.validate.enable": false,
+  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.iconTheme": null
 }
