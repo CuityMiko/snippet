@@ -6,7 +6,29 @@
 选中日期后执行以下代码获取文字版
 
 ```
-$0.textContent.replace(/\s*/g, ' ').trim()
+var tokens = []
+var items = document.querySelectorAll('ul.t li')
+items.forEach(item => tokens.push(item.textContent.replace(/\s*/g, ' ').trim()))
+console.log(tokens.join('\n'))
+```
+
+```
+CREATE TABLE `user` (
+  `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `name` varchar(128) DEFAULT NULL COMMENT '企业名称',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '最后更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8mb4 COMMENT='商家表';
+
+CREATE TABLE `category` (
+  `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `name` varchar(128) DEFAULT NULL COMMENT '企业名称',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '最后更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8mb4 COMMENT='商家表';
+
 ```
 
 ## 颜色

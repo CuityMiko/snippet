@@ -2,21 +2,26 @@
 {
   "files.autoSave": "onFocusChange",
   "files.associations": {
-      "*.js": "javascriptreact"
+    "*.js": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
-      "javascript": "jsx",
-      "vue": "html",
-      "vue-html": "html"
+    "javascript": "jsx",
+    "vue": "html",
+    "vue-html": "html"
   },
   "workbench.editor.showIcons": false,
   "explorer.openEditors.visible": 0,
-
   "window.zoomLevel": 0,
   "editor.renderWhitespace": "all",
   "editor.tabCompletion": true,
   "editor.wordWrap": "on",
   "javascript.validate.enable": false,
   "workbench.colorTheme": "Visual Studio Light",
-  "workbench.iconTheme": null
+  "workbench.iconTheme": null,
+  "typescript.check.npmIsInstalled": false,
+  "extensions.ignoreRecommendations": true,
+  "sublimeTextKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true
 }
